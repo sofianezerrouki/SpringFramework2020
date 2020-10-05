@@ -10,12 +10,17 @@ public class HelloSpringApp {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		//Retrieve the been from the spring container 
-		Coach theCoach = context.getBean("tenis",Coach.class);
+		Coach coachTenis = context.getBean("tenisCoach",Coach.class);
 		
 		//call method on been 
-		System.out.println(theCoach.getDailyWorkout());
+		System.out.println(coachTenis.getDailyWorkout());
 		
 		//close the contex
+		
+		Coach coachBaseBall = context.getBean("baseBallCoach",Coach.class);
+		
+		System.out.println(coachBaseBall.getDailyWorkout());
+		
 		context.close();
 	}
 

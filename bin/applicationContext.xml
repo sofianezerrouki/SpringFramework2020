@@ -12,18 +12,22 @@
     
     <!-- define the dependency -->
 	
-	<!-- Define a logger -->
+	<!-- Define a logger 
 	<bean id ="myloggerConfig" class="com.sofiane.springdemo.MyloggerConfig" init-method="initLogger">
 		<property name="rootLoggerLevel" value="FINE"/>
 		<property name="printedLoggerLevel" value="FINE"/>
 	</bean>
-	
-    <bean id="tenis"
+	-->
+    <bean id="tenisCoach"
         class="com.sofiane.springdemo.TenisCoach">         
     </bean>
     
-    <bean id="myFortuneService"
-    		class="com.luv2code.springdemo.HappyFortuneService">
+    <bean id="baseBallCoach"
+        class="com.sofiane.springdemo.BaseBallCoach">         
     </bean>
-
+    <!--      
+    <bean id="myFortuneService"
+    		class="com.sofiane.springdemo.HappyFortuneService">
+    </bean>
+  	-->
 </beans>
