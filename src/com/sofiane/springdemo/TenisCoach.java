@@ -18,4 +18,3 @@ public class TenisCoach implements Coach{
 	
 		
 }
-//dependency is like a helper object or like a servise 

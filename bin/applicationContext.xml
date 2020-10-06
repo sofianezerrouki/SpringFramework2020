@@ -25,9 +25,15 @@
     <bean id="baseBallCoach"
         class="com.sofiane.springdemo.BaseBallCoach">         
     </bean>
-    <!--      
+    
+    
+    <!-- define the dependency -->     
+    
     <bean id="myFortuneService"
     		class="com.sofiane.springdemo.HappyFortuneService">
+    		
+    <!-- set up constructor injection -->		
+    <constructor-arg ref="myFortuneService"/>
     </bean>
-  	-->
+  	
 </beans>
