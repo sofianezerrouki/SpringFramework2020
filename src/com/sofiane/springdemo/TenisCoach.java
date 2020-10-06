@@ -9,6 +9,12 @@ public class TenisCoach implements Coach{
 		return "Tenis Coach ...";
 	}
 
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	
 		
 }
