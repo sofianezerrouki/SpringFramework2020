@@ -6,7 +6,7 @@ public class CricketCoach implements Coach {
 
 	//create a no-arg constructor
 	public CricketCoach() {
-		System.out.println("inside No-arg constructor");
+		System.out.println("inside No-arg constructor of CricketCoach class");
 	}
 	//our seter methods
 	public void setFortuneService(FortuneService fortuneService) {
