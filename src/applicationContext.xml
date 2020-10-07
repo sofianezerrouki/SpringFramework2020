@@ -27,6 +27,9 @@
     <bean id="myFortuneService"
     		class="com.sofiane.springdemo.HappyFortuneService">
     </bean>	
+    <bean id="randomFortuneService"
+    		class="com.sofiane.springdemo.RandomFortuneService">
+    </bean>	
 	
     <bean id="tenisCoach"
         class="com.sofiane.springdemo.TenisCoach">
@@ -56,7 +59,11 @@
   		  <property name="emailAddress" value="${foo.email}"></property>
   		  <property name="team" value="${foo.team}"></property>
   	</bean>
-  	
+  	<bean id="myGolfCoach"
+  		class="com.sofiane.springdemo.GolfCoach">
+  		<!-- set up constructor injection -->
+ 		<constructor-arg ref="randomFortuneService" />
+  	</bean>
   	
   	
 </beans>
