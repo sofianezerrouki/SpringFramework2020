@@ -43,4 +43,10 @@
     	<constructor-arg ref="myFortuneService"/>
     </bean>
   	
+  	<bean id="myCricketCoach"
+  		  class="com.sofiane.springdemo.CricketCoach">
+  		  <!-- set up setter injection -->
+  		  <property name="fortuneService" ref="myFortuneService"/>	
+  	</bean>
+  	
 </beans>
