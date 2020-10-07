@@ -20,7 +20,7 @@ public class HelloSpringApp {
 		
 		//close the contex
 		
-		context.close();
+		//context.close();
 	}
 
 }
