@@ -8,7 +8,7 @@ public class SetterDemoApp {
 		//load the Spring XMLFilepath
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		//Retrieve Bean from Spring container --dependency setter injection in the XML configuration --
-		Coach theCoach = context.getBean("myCricketCoach",Coach.class);
+		CricketCoach theCoach = context.getBean("myCricketCoach",CricketCoach.class);
 		//call methods on the bean
 		//....
 		System.out.println(theCoach.getDailyWorkout());
@@ -16,7 +16,11 @@ public class SetterDemoApp {
 		//dependency Constructor injection 
 		System.out.println(theCoach.getDailyFortune());
 		
-		//close the contex
+		
+		//call our methods to get the literal values 
+		System.out.println(" Email address : "+theCoach.getEmailAddress());
+		System.out.println(" Team Name : "+theCoach.getTeam());
+		//close the context
 		
 		context.close();
 

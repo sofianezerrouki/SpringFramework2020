@@ -47,6 +47,11 @@
   		  class="com.sofiane.springdemo.CricketCoach">
   		  <!-- set up setter injection -->
   		  <property name="fortuneService" ref="myFortuneService"/>	
+  		  <!-- inject the literal Values --> 
+  		  <property name="emailAddress" value="thisemail@gmail.com"></property>
+  		  <property name="team" value="jsmt tiaret !"></property>
   	</bean>
+  	
+  	
   	
 </beans>
