@@ -2,6 +2,17 @@
 package com.sofiane.springdemo;
 
 public class TenisCoach implements Coach{
+	
+	private FortuneService fortuneServise;
+	
+	public TenisCoach(FortuneService fortuneServise) {
+		super();
+		this.fortuneServise = fortuneServise;
+	}
+
+	public TenisCoach() {
+		super();
+	}
 
 	@Override
 	public String getDailyWorkout() {
@@ -11,10 +22,8 @@ public class TenisCoach implements Coach{
 
 	@Override
 	public String getDailyFortune() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return fortuneServise.getFortuneService();
 	}
 
-	
-		
 }

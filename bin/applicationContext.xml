@@ -18,20 +18,26 @@
 		<property name="printedLoggerLevel" value="FINE"/>
 	</bean>
 	-->
-    <bean id="tenisCoach"
-        class="com.sofiane.springdemo.TenisCoach">         
-    </bean>
-
-	
 	<!-- define the dependency -->     
     
     <bean id="myFortuneService"
     		class="com.sofiane.springdemo.HappyFortuneService">
     </bean>	
-    
+	
+    <bean id="tenisCoach"
+        class="com.sofiane.springdemo.TenisCoach">
+        
+        <constructor-arg ref="myFortuneService"/>         
+    </bean>
     
     <bean id="baseBallCoach"
         class="com.sofiane.springdemo.BaseBallCoach">         
+   	
+    	<!-- set up constructor injection -->		
+    	<constructor-arg ref="myFortuneService"/>
+    </bean>
+     <bean id="trackCoach"
+        class="com.sofiane.springdemo.TrackCoach">         
    	
     	<!-- set up constructor injection -->		
     	<constructor-arg ref="myFortuneService"/>
