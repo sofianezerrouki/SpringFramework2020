@@ -12,9 +12,11 @@
     </bean>	
     
     <bean id="myGolfCoach"
-  		class="com.sofiane.springdemo.GolfCoach">
+  		class="com.sofiane.springdemo.GolfCoach"
+  		scope="prototype"
+  		>
   		<!-- set up constructor injection -->
- 		<constructor-arg ref="HappyFortuneService" />
+ 		<constructor-arg ref="myFortuneService" />
   	</bean>
   	
   	
