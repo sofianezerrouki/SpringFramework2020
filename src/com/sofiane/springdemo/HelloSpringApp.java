@@ -28,7 +28,7 @@ public class HelloSpringApp {
 				
 		System.out.println("Tenis Coach : "+tenisCoach.getDailyFortune());
 				
-		//close the contex
+		//close the contex for cleaning
 		context.close();
 	}
 
