@@ -28,6 +28,5 @@ public class BeanScopeDemoApp {
 		//close context
 		context.close();
 		
-		
 	}
 }
