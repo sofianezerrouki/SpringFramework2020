@@ -3,6 +3,7 @@ package com.sofiane.springdemo;
 public class CricketCoach implements Coach {
 	
 	private FortuneService fortuneService;
+
 	//literal values
 	private String emailAddress;
 	private String team;
